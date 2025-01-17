@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Inter", sans-serif;
+	src: url("/assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+	font-style: normal;
+}
+
+.span1 {
+	transform: rotate(45deg) translate(11px, 11px);
+}
+
+.span2 {
+	opacity: 0;
+}
+
+.span3 {
+	transform: rotate(-45deg) translate(0, 0);
+}
+
+.nav-opend {
+	right: 0 !important;
+}
+
+.hamburger-item {
+	@apply block w-8 h-1 transition-all duration-500 bg-veryDarkBlue;
+}
+
+.nav-item {
+	@apply font-semibold transition-colors duration-500 cursor-pointer text-veryDarkBlue sm:text-3xl hover:text-softRed;
+}
+
+.new-item {
+	@apply mt-3 border-b-[1px] border-grayishBlue pb-4;
+}
+
+.new-item p:first-of-type {
+	@apply mb-3 text-xl font-semibold transition-colors duration-500 cursor-pointer text-OffWhite sm:text-2xl md:text-4xl xl:text-2xl xl:mt-10 hover:text-softOrange;
+}
+
+.new-item p:nth-of-type(2) {
+	@apply text-grayishBlue sm:text-xl md:text-2xl xl:text-xl xl:mb-10;
+}
+
+.guide-article {
+	@apply flex justify-center gap-5 mt-8 sm:gap-11 lg:m-0 lg:flex-col lg:justify-start xl:flex-row;
+}
+
+article {
+	@apply w-[65%] flex flex-col justify-between lg:justify-center lg:gap-2 lg:w-[50%] xl:justify-start;
+}
+
+.articles-count {
+	@apply text-5xl font-semibold text-softRed sm:text-7xl md:text-8xl lg:text-5xl xl:text-3xl;
+}
+
+.articles-head {
+	@apply text-base font-extrabold transition-colors duration-500 cursor-pointer text-veryDarkBlue sm:text-2xl hover:text-softRed md:text-4xl lg:text-2xl xl:text-base;
+}
+
+.articles-desc {
+	@apply text-base text-darkGrayishBlue sm:text-2xl md:text-3xl lg:text-2xl xl:text-base;
+}
